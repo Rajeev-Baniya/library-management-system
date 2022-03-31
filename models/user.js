@@ -14,6 +14,10 @@ const userSchema = new mongoose.Schema({
     type: String,
     trim: true,
   },
+  semester: {
+    type: String,
+    trim: true,
+  },
   email: {
     type: String,
     trim: true,
@@ -26,6 +30,16 @@ const userSchema = new mongoose.Schema({
         id: {
           type: mongoose.Schema.Types.ObjectId,
           ref: "Issue",
+        },
+      },
+    },
+  ],
+  notifications: [
+    {
+      notification: {
+        id: {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: "Notification",
         },
       },
     },

@@ -1,8 +1,9 @@
-.btn-group-xs > .btn, .btn-xs {
-  padding: .40rem .40rem;
-  font-size: .8rem;
-  line-height: .5;
-  border-radius: .2rem;
+.btn-group-xs > .btn,
+.btn-xs {
+  padding: 0.4rem 0.4rem;
+  font-size: 0.8rem;
+  line-height: 0.5;
+  border-radius: 0.2rem;
 }
 
 .wrapper {
@@ -10,7 +11,7 @@
   justify-content: center;
 }
 
-footer { 
+footer {
   flex: 0 0 auto;
   display: flex;
   color: #ccc;
@@ -24,4 +25,36 @@ footer {
 .table-text {
   color: red;
   font-weight: bold;
+}
+
+.back-img {
+  background-image: url("../../images/library.jpg");
+  height: 100vh;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-position: center;
+  position: relative;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.abs-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.back-img h1 {
+  color: #087f5b;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 16px 0;
+  font-weight: bolder;
+}
+
+.card-body img {
+  height: 190px;
+  width: 83%;
+  margin-bottom: 16px;
 }

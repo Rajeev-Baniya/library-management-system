@@ -14,4 +14,9 @@ router.post("/books/:filter/:value/:page", bookController.findBooks);
 // Fetch individual book details
 router.get("/books/details/:book_id", bookController.getBookDetails);
 
+//get latest top 10 books
+router.get("/", bookController.getTenBooks);
+
+
+
 module.exports = router;

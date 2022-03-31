@@ -76,6 +76,7 @@ exports.postUserSignUp = async (req, res, next) => {
       email: req.body.email,
       gender: req.body.gender,
       address: req.body.address,
+      semester: req.body.semester,
     });
 
     await User.register(newUser, req.body.password);
